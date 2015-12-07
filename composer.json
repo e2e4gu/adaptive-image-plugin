@@ -1,0 +1,25 @@
+{
+    "name": "e2e4gu/adaptive-image-plugin",
+    "description": "AdaptiveImages plugin for CakePHP 3",
+    "type": "cakephp-plugin",
+    "minimum-stability" : "dev",
+    "prefer-stable" : true,
+    "require": {
+        "php": ">=5.4.16",
+	"ps/image-optimizer": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "AdaptiveImages\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AdaptiveImages\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}
