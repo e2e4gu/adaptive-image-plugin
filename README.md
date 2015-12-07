@@ -15,7 +15,7 @@ You can install this plugin into your CakePHP application using [composer](http:
 The recommended way to install composer packages is:
 
 ```
-composer require killmegently/adaptive_image_plugin
+composer require e2e4gu/adaptive-image-plugin
 ```
 Add to /config/bootstrap.php
 ```
@@ -39,7 +39,7 @@ echo $this->AdaptiveImg->image('yourimage.jpg', ['semanticType' => 'original']);
 ```
 You can add semanticTypes and resolutionBreakpoints in:
 ```
-<your_local_project_dir>/vendor/killmegently/adaptive_image_plugin/config/adaptive_image_config.php
+<your_local_project_dir>/vendor/e2e4gu/adaptive-image-plugin/config/adaptive_image_config.php
 <your_local_project_dir>/config/adaptive_image_config.php
 ```
 Config config syntax:
