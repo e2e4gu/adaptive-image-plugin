@@ -25,9 +25,9 @@ class AdaptiveImagesController extends AppController
     protected $_jpgQuality = 75; // the quality of any generated JPGs on a scale of 0 to 100
     protected $_sharpen = true; // Shrinking images can blur details, perform a sharpen on re-scaled images?
     protected $_watchCache = true; // check that the adapted image isn't stale (ensures updated source images are re-cached)
-    protected $_browserCache = 60 * 60 * 24 * 7; // How long the BROWSER cache should last (seconds, minutes, hours, days. 7days by default)
+    protected $_browserCache = 604800; // How long the BROWSER cache should last (seconds, minutes, hours, days. 7days by default)
     protected $_configFilename = 'adaptive_image_config'; // without extension; get config from ./config/ or , if not exists, from ./plugins/AdaptiveImages/config/
-    protected $_documentRoot = ROOT . DS . 'webroot';
+    protected $_documentRoot = WWW_ROOT;
     protected $_resolution = false;
     protected $_cacheClearSecretWord = 'jumanji';
     
